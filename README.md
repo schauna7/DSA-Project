@@ -1,20 +1,22 @@
 # DSA-Project
 Web Page Cache System - LRU Cache Implementation
-Overview
+
+# Overview
 This project implements a Web Page Cache System using the Least Recently Used (LRU) Cache Algorithm. The system efficiently stores frequently accessed web pages and evicts the least recently accessed pages when the cache reaches a predefined size limit. This is especially useful in browsers, databases, and memory management systems where quick access and optimization of space are crucial.
 
-Features
+# Features
 LRU Cache Algorithm: Ensures the most recently accessed pages are retained while the least recently accessed pages are evicted when capacity is full.
 Efficient Access: Uses a combination of Doubly Linked List and HashMap to provide constant time complexity 
 O(1) for insertion, lookup, and deletion.
 Console-based Interaction: Simulates web page requests and cache management through a console interface.
-Data Structures
+
+# Data Structures
 Doubly Linked List (DLL): Tracks the order of page accesses, with the most recently used pages at the head and the least recently used pages at the tail.
 HashMap: Provides quick access to the web page nodes in the doubly linked list by mapping URLs to their respective nodes.
 Use Case
 This system mimics how web browsers store web pages to enhance browsing performance by caching frequently visited pages, reducing the need to reload them from the server.
 
-How It Works
+# How It Works
 When a web page is requested, the system checks if it is already in the cache:
 If it is, the page is moved to the front of the cache as it is the most recently used.
 If it isn't, the page is loaded and added to the cache.
